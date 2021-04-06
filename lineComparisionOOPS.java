@@ -20,10 +20,13 @@ public class lineComparisionOOPS{
 			System.out.println("the length of line two"+"("+x1+","+x2+")"+"("+y1+","+y2+")"+"is:->"+dis2);
 			String s1 = dis1+"";
 			String s2 = dis2+""; 
-			if(s1.equals(s2) == true)
-				System.out.println("the two lines are equal");
-			else
-				System.out.println("the two lines are not equal");
+			double res = s1.compareTo(s2);
+			if(res == 0)
+				System.out.println("lines are equal");
+			else if(res < 0.0)
+				System.out.println("line one is smaller thean line two");
+			else  
+				System.out.println("lines one is greater then line two");
 	}
 	public static void main(String args[]){
 		lineComparisionOOPS object = new lineComparisionOOPS();
